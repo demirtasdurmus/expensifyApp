@@ -1,9 +1,117 @@
+.box-layout {
+    background: url("../images/bg.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.box-layout__box {
+    background: rgb(248, 242, 242);
+    border-radius: 3px;
+    padding: 1.6rem 1.2rem;
+    text-align: center;
+    width: 20rem;
+}
+
+.box-layout__title {
+    margin: 0 0 1.2rem 0;
+    line-height: 1;
+}
+
+.button {
+    background: #1c88bf;
+    border: none;
+    color: white;
+    display: inline-block;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1;
+    padding: 0.6rem;
+    text-decoration: none;
+}
+
+.button-link {
+    background: none;
+}
+
+.header {
+    background: #364051;
+}
+
+.header__title {
+    color: white;
+    text-decoration: none;
+   
+}
+
+.header__title h1 {
+    font-weight: 700;
+}
+
+.content-container {
+    margin: 0 auto;
+    padding: 0 1.2rem;
+    max-width: 80rem;
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.4rem 0;
+}
+
+.page-header {
+    background: #f8f8f8;
+    margin-bottom: 1rem;
+    padding: 1rem 0;
+}
+
+.page-header__title {
+    font-weight: 300;
+    margin: 0;
+}
+
+.page-header__title span {
+    font-weight: bold;
+}
+
+.page-header__actions {
+    margin-top: 1.2rem;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 html {
     font-size: 100%;
 }
 
 body {
+    color: #333333 ;
     font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
 }
 
 button {
