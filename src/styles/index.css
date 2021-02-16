@@ -33,6 +33,10 @@
     text-decoration: none;
 }
 
+.button--secondary {
+    background: #888888;
+}
+
 .button-link {
     background: none;
 }
@@ -65,7 +69,7 @@
 }
 
 .page-header {
-    background: #f8f8f8;
+    background: #f7f7f7;
     margin-bottom: 1rem;
     padding: 1rem 0;
 }
@@ -84,6 +88,133 @@
 
 }
 
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+}
+
+@media (min-width: 992px) {
+    .input-group {
+        flex-direction: row;
+        margin-bottom: 1rem;
+    }
+}
+
+.input-group__item {
+    margin-bottom: 0.4rem;
+    
+}
+
+@media (min-width: 992px) {
+    .input-group__item {
+        margin: 0 0.4rem 0 0;
+    }
+}
+
+.text-input, .select, .textarea {
+    border: 1px solid #cacccd;
+    height: 50px;
+    font-size: 5;
+    font-weight: 300;
+    padding: 0.4rem;
+}
+
+.textarea {
+    height: 10rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form > * {
+    margin-bottom: 1.2rem;
+}
+
+.form__error {
+    margin: 0 0 1.2rem 0;
+    font-style: italic;
+}
+
+
+@media (min-width: 992px) {
+    .show-for-mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 991px) {
+    .show-for-desktop {
+        display: none;
+    }
+}
+
+.list-header {
+    background: #f7f7f7;
+    border: 1px solid #f1f1f1;
+    color: #666;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.4rem 1rem;
+}
+
+.list-item {
+    border: 1px solid #f1f1f1;
+    border-top: none;
+    color: rgb(27, 27, 27);
+    display: flex;
+    flex-direction: column;
+    padding: 0.4rem;
+    text-decoration: none;
+    transition: background .3s ease;
+}
+
+.list-item:hover {
+    background: #f7f7f7;
+}
+
+@media (min-width: 992px) {
+    .list-item {
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+}
+
+.list-item--message {
+    align-items: center;
+    color: #666;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.list-item--message:hover {
+    background: none;
+}
+
+.list-item__title {
+    margin: 0;
+    word-break: break-all;
+}
+
+.list-item__subtitle {
+    color: #666;
+    font-size: 1.4rem;
+}
+
+.list-item__data {
+    margin: 0.4rem 0 0 0;
+}
+
+@media (min-width: 992px) {
+    .list-item__data {
+        margin: 0;
+        padding-left: 0.4rem;
+    }
+}
 
 
 
@@ -103,6 +234,10 @@
 
 
 
+
+* {
+    box-sizing: border-box;
+}
 
 html {
     font-size: 100%;
